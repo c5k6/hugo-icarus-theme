@@ -6,6 +6,9 @@
 
         {{ partial "article_header" . }}
         <div class="article-entry" itemprop="articleBody">
+            <aside>
+                {{.TableOfContents}}
+            </aside>
             {{ .Content }}
         </div>
         {{ partial "article_footer" . }}
